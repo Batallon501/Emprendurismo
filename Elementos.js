@@ -1,4 +1,3 @@
-
 /*JUAN CORTES*/
 
 hamburger = document.querySelector(".hamburger");
@@ -23,7 +22,5 @@ document.getElementById('prev').onclick = function(){
 /*FIN JUAN DE LA CRUZ*/
 
 /*ALAN INICIO*/
-
-
 
 /*ALAN FIN*/

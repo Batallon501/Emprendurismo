@@ -303,6 +303,28 @@
     background-position: center center;
 }
 
+#hero11{
+    transition: 0.8s;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Foto\ inicio2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .card1{
     width: 320px;
     height: 500px;
@@ -360,6 +382,92 @@
 
 
 /*PABLO*/
+
+/* menu */
+#menu ul.a {
+    position: fixed;
+    z-index: 3;
+    margin-top: -26.5%;
+    margin-left: -45%;
+    list-style:none;
+    padding:0;
+} 
+#menu ul.b {
+    z-index: 3;
+    list-style:none;
+    padding:0;
+} 
+/* enlaces del menu */   
+#menu ul a {
+    width: 100%;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing:1px;
+}
+/* items del menu */ 
+#menu ul li.a {
+    border-radius: 20px;
+    background-color: black;
+    width: 200%;
+    position:relative;
+    float:left;
+}   
+#menu ul li.b {
+    background-color: black;
+    width: 200%;
+    position:relative;
+    float:left;
+}   
+/* efecto al pasar el ratón por los items del menu */   
+#menu ul li:hover {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: 0.5s;
+    background: #B12028;
+}
+/* menu desplegable */
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}  
+/* items del menu desplegable */   
+#menu ul ul li {
+    float:none;
+    width:150px;
+}
+/* enlaces de los items del menu desplegable */
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+/* items del menu desplegable al pasar el ratón */   
+#menu ul li:hover > ul {
+    display:block;
+}
+.boton{
+    background-color: #B12028;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    margin-top: 50%;
+    margin-left: 70%;
+    width: 5%;
+    border-radius: 100%;
+}
+.no{
+    text-decoration: none;
+    color: white;
+}
 .slider{
     border-radius: 20px;
     margin-left: 25%;
@@ -402,7 +510,10 @@
     100%{ margin-left: -300%;}
 }
 .slider1{
-    width: 50%;
+    border-radius: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 30%;
     overflow: hidden;
 }
 .slider1 ul{
@@ -414,7 +525,7 @@
     margin-bottom: -59%;
 }
 .slider1 li{
-    width: 100%;
+    width: 50%;
     list-style: none;
 }
 .slider1 img{
@@ -516,12 +627,14 @@
     text-align: center;
     margin-left: 0.5%;
     margin-right: 0.5%;
+    margin-top: 50px;
 }
 .titm1{
     color: #B12028;
     text-align: center;
     margin-left: -7.5%;
     margin-right: 0.5%;
+    margin-top: 50px;
 }
 .tita{
     color: black;
@@ -586,10 +699,14 @@
     -moz-transform: rotate(-90deg);
 }
 .logos1{
-    width: 4%;
+    margin-top: 6%;
+    width: 10%;
 }
 .redes1{
     margin-left: 76%;
+}
+.mujer{
+    height: 0%;
 }
 .conf1{
     border-radius: 10%;
@@ -651,9 +768,10 @@
     width: 50%;
 }
 .lug1{
+    margin-left: 7%;
+    margin-right: 7%;
     text-align: center;
     border-radius: 20px;
-    width: 100%;
     background-color: rgb(230, 230, 230);
     color: black;
     font-size: 22px;
@@ -661,7 +779,8 @@
 .lug{
     text-align: center;
     text-align: justify;
-    margin-left: 15%;
+    margin-left: 13%;
+    margin-right: 5%;
 }
 .luga{
     text-align: center;
@@ -682,6 +801,10 @@
 .mar1{
     font-size: 32px;
     padding-top: 40%;
+    text-align: center;
+}
+.p{
+    font-size: 20px;
     text-align: center;
 }
 .mar2{
@@ -810,6 +933,7 @@
     text-align: center;
     margin-left: -14%;
     margin-right: -14%;
+    margin-top: 50px;
 }
 
 .container{
@@ -1280,6 +1404,78 @@
 
 /*ESTILOS DE SERVICIOS INICIO*/
 
+.wrap {
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+ul.tabs {
+    width: 100%;
+    background: #D7A840;
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li {
+    width: 18%;
+}
+
+ul.tabs li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+
+    display: block;
+    padding: 20px 0px;
+}
+
+.active {
+    background: #000;
+}
+
+ul.tabs li a .tab-text {
+    margin-left: 8px;
+}
+
+.secciones {
+    width: 100%;
+    background: #dbdbdb;
+}
+
+.secciones article {
+    padding: 30px;
+}
+
+.secciones article p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+    ul.tabs li {
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    ul.tabs li a {
+        padding: 15px 0px;
+    }
+
+    ul.tabs li a .tab-text {
+        display: none;
+    }
+
+    .secciones article {
+        padding: 20px;
+    }
+}
+
+
+/*
 .wrap{
     text-align: center;
     font-size: 50px;
@@ -1304,6 +1500,9 @@
     margin-bottom: 3%;
     margin-right: -12%;
 }
+*/
+
+
 
 /*ESTILOS DE SERVICIOS FIN*/
 
