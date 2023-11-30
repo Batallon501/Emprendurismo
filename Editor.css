@@ -692,6 +692,17 @@
     background-color: rgb(230, 230, 230);
 
 }
+.back2{
+    width: 88%;
+    overflow: hidden;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(230, 230, 230);
+
+}
 .logos1{
     margin-top: 6%;
     width: 10%;
@@ -753,6 +764,12 @@
 }
 .hor{
     margin-left: 35%;
+}
+.hor1{
+    margin-left: 18.5%;
+}
+.hor2{
+    margin-left: 14.5%;
 }
 .palo{
     color: #D7A840;
