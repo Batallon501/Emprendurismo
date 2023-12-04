@@ -10,14 +10,6 @@
     <link rel="icon" href="img/logo.ico">
     <title>Generación de ambientes</title>
 </head>
-    <script>document.getElementById('next').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').appendChild(lists[0]);
-}
-document.getElementById('prev').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').prepend(lists[lists.length - 1]);
-}</script>
 <body>
   <header>
     <div class="logo">EMPRENDURISMO</div>
@@ -131,7 +123,14 @@ document.getElementById('prev').onclick = function(){
 <br>
 <br>
 
-
+  <script>document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+}</script>
   <div id="tit2" class="container">
     <div id="slide">
         <div class="item" style="background-image: url(receptionPOLI.jpg);">
