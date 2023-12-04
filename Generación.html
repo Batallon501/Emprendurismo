@@ -123,14 +123,6 @@
 <br>
 <br>
 
-  <script>document.getElementById('next').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').appendChild(lists[0]);
-}
-document.getElementById('prev').onclick = function(){
-    let lists = document.querySelectorAll('.item');
-    document.getElementById('slide').prepend(lists[lists.length - 1]);
-}</script>
   <div id="tit2" class="container">
     <div id="slide">
         <div class="item" style="background-image: url(receptionPOLI.jpg);">
@@ -168,8 +160,14 @@ document.getElementById('prev').onclick = function(){
         </div>
     </div>
 </div>
-
-  <script src="Elementos.js"></script>
+ <script>document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+}</script>
     <div id="tit3" class="parrafos lug1a">
         <div class="slider1 fon">
             <ul>
